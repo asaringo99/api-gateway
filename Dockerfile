@@ -7,7 +7,6 @@ COPY package*.json ./
 FROM base AS development
 RUN npm install
 COPY . .
-CMD ["npm", "run", "dev"]
 
 # Build
 FROM base AS build

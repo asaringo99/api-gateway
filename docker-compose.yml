@@ -4,6 +4,8 @@ services:
     build:
       context: .
       target: development
+    tty: true
+    init: true
     volumes:
       - .:/app
       - /app/node_modules
